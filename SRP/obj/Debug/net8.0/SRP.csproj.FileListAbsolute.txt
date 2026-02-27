@@ -1,0 +1,14 @@
+G:\C#\Random\SOLID\SRP\bin\Debug\net8.0\SRP.exe
+G:\C#\Random\SOLID\SRP\bin\Debug\net8.0\SRP.deps.json
+G:\C#\Random\SOLID\SRP\bin\Debug\net8.0\SRP.runtimeconfig.json
+G:\C#\Random\SOLID\SRP\bin\Debug\net8.0\SRP.dll
+G:\C#\Random\SOLID\SRP\bin\Debug\net8.0\SRP.pdb
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\SRP.GeneratedMSBuildEditorConfig.editorconfig
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\SRP.AssemblyInfoInputs.cache
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\SRP.AssemblyInfo.cs
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\SRP.csproj.CoreCompileInputs.cache
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\SRP.dll
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\refint\SRP.dll
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\SRP.pdb
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\SRP.genruntimeconfig.cache
+G:\C#\Random\SOLID\SRP\obj\Debug\net8.0\ref\SRP.dll
