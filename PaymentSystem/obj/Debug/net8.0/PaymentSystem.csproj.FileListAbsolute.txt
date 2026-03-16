@@ -1,0 +1,15 @@
+G:\C#\Random\SOLID\PaymentSystem\bin\Debug\net8.0\PaymentSystem.exe
+G:\C#\Random\SOLID\PaymentSystem\bin\Debug\net8.0\PaymentSystem.deps.json
+G:\C#\Random\SOLID\PaymentSystem\bin\Debug\net8.0\PaymentSystem.runtimeconfig.json
+G:\C#\Random\SOLID\PaymentSystem\bin\Debug\net8.0\PaymentSystem.dll
+G:\C#\Random\SOLID\PaymentSystem\bin\Debug\net8.0\PaymentSystem.pdb
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.GeneratedMSBuildEditorConfig.editorconfig
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.AssemblyInfoInputs.cache
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.AssemblyInfo.cs
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.csproj.CoreCompileInputs.cache
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.dll
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\refint\PaymentSystem.dll
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.pdb
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.genruntimeconfig.cache
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\ref\PaymentSystem.dll
+G:\C#\Random\SOLID\PaymentSystem\obj\Debug\net8.0\PaymentSystem.sourcelink.json
