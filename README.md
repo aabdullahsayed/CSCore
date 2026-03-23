@@ -9,3 +9,83 @@
 
 ### 4. Basic Programming Concept
 
+- Datatypes & Variable
+- Control Flow
+- Loops
+
+### 5. Array & Collections
+- Multi-dimensional Arrays
+- Jagged Array
+- List
+
+### 6. Procedural vs OOP
+
+- Why OOP ?
+- Class & Object
+
+### 7. OOP Pillars
+
+- Encapsulation
+- Abstraction
+- Inheritance
+- Polymorphism
+
+### 8. Access Modifiers
+
+- Public, Private, Protected
+- Internal, Protected Internal, Private Protected
+
+
+### 9. Constructor
+
+### 10. Value & Reference type
+
+### 11. Stack vs Heap
+
+### 12. Properties & Indexers
+
+- Property Accessor (get, set, init)
+- Auto implement & Full Properties
+- Properties in DTO's and Model
+
+### 13. Enumeration
+
+### 14. Inheritance in C#
+
+- Single, Multilevel, Hierarchical
+- Multiple Inheritance (Using Interfaces)
+- Hybrid Inheritance
+- Drawbacks of Inheritance
+- Diamond Problem 
+- FAQ: Composition over Inheritance, Who can solve drawbacks of inheritance?
+
+### 15. Interface & Abstract
+
+- When to use?
+- When Abstraction is Justified?
+
+### 16. Polymorphism
+
+- Compile Time Polymorphism (Method Overloading, Operator Overloading)
+- Run Time Polymorphism (Method Overriding)
+- Parametric Polymorphism (Generics)
+
+### 17. The glue of OOP
+
+- Association
+- Aggregation
+- Composition
+
+### 18. Exception Handling
+
+- Try, Catch , Finally, Throw
+- Custom Exceptions
+
+### 19. Delegates and Events
+
+- Using the delegate keyword
+- Predefined Delegate (Func, Action, Predicate)
+
+### 20. Loose Coupling & Tight Coupling
+
+
