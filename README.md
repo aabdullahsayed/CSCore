@@ -88,4 +88,72 @@
 
 ### 20. Loose Coupling & Tight Coupling
 
+## Database and SQL
+
+### What is database?
+
+### Key and Relationships
+
+### SQl vs NoSQL
+
+### SQL Server
+
+### SQL Data Types
+
+### Basic SQL Commands 
+
+- Create a Database and Table
+- Insert/Seed Data
+- Basic Seed Queries
+- Filtering & Sorting (WHERE, ORDERBY, LIMIT/TOP)
+- SQL 
+- DML Commands (Insert, Update, Delete)
+
+### Modifying Table Structure
+
+- ADD & ALTER COMMAND
+- DROP DATABASE
+- DROP Column
+- DROP Table
+
+### Database constraints
+- PRIMARY KEY
+- FOREIGN KEY
+- NOT NULL
+- Putting constraints together
+- Adding constraints to existing table
+
+### Table Relationship
+- One to Many
+- Many to Many
+
+### Referential integrity
+
+### ON DELETE Cascade
+
+### Joins
+- INNER JOIN, LEFT JOIN, RIGHT FULL
+
+### Aliases and aggregate Functions
+
+### GROUP BY & Having
+
+### Subqueries
+
+### View
+
+### Stored Procedures
+
+### Transactions - ACID
+
+### Indexes
+
+### B-Tree
+
+### Database partitioning
+
+### Database sharding
+
+### ER Diagrams
+
 
