@@ -4,12 +4,13 @@
 - CLR 
 - JIT
 - Garbage Collector
+- [Stack and Heap](https://dotnettutorials.net/lesson/stack-and-heap-dotnet/)
 
 ### 3. Basic syntax of C#
 
 ### 4. Basic Programming Concept
 
-- Datatypes & Variable
+- Datatypes & Variable 
 - Control Flow
 - Loops
 
