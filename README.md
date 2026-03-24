@@ -89,6 +89,17 @@
 
 ### 20. Loose Coupling & Tight Coupling
 
+## SOLID and Design Patterns
+
+### SOLID
+
+- Single Responsibility Principle
+- Open-Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- [Dependency Inversion Principle](./DIP)
+
+
 ## Database and SQL
 
 ### What is database?
