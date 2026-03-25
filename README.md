@@ -192,7 +192,7 @@
 - ADO.NET 
 - N-Tier Architecture
 - Clean Architecture
-- Controller IActionResult
+- Controller `IActionResult`
 - Dependency Injection Life Cycle - Transient, Scoped, Singleton
 - Http Context
 - Reflection
