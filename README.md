@@ -1,3 +1,5 @@
+## A. C# Fundamentals
+
 ### 1. Runtime and Compile Time
 
 ### 2. C# Fundamentals
@@ -89,18 +91,25 @@
 
 ### 20. Loose Coupling & Tight Coupling
 
-## SOLID and Design Patterns
+## B. SOLID and Design Patterns
 
 ### SOLID
 
-- Single Responsibility Principle
-- Open-Closed Principle
+- [Single Responsibility Principle](./SRP)
+- [Open-Closed Principle](./OCP)
 - Liskov Substitution Principle
 - Interface Segregation Principle
 - [Dependency Inversion Principle](./DIP)
 
 
-## Database and SQL
+### Design Patterns
+- Strategy 
+- Factory
+- Adapted
+- Observer
+
+
+## C. Database and SQL
 
 ### What is database?
 
@@ -167,5 +176,28 @@
 ### Database sharding
 
 ### ER Diagrams
+
+
+## API & REST
+
+
+## Dot net
+
+- Dotnet Project Structure
+- Middleware
+- Building Dotnet From Scratch
+- From Client to endpoint
+- Minimal API
+- Dependency Injection and IoC
+- ADO.NET 
+- N-Tier Architecture
+- Clean Architecture
+- Controller IActionResult
+- Dependency Injection Life Cycle - Transient, Scoped, Singleton
+- Http Context
+- Reflection
+- API Controller
+
+
 
 
