@@ -23,7 +23,7 @@ var app = builder.Build();
 app.Run();
 ```
 
-`CreateBuilder()` → sets up default hosting (Kestrel server, config, logging)
-`Build()` → creates the app
+`CreateBuilder()` → sets up default hosting (Kestrel server, config, logging) <br>
+`Build()` → creates the app <br>
 `Run()` → starts listening for requests
 
