@@ -184,10 +184,10 @@
 ## Dot net
 
 - Dotnet Project Structure
-- Middleware
+- [Middleware](./Middleware)
 - Building Dotnet From Scratch
 - From Client to endpoint
-- Minimal API
+- [Minimal API](https://github.com/aabdullahsayed/minimal-api-middleware-demo)
 - Dependency Injection and IoC
 - ADO.NET 
 - N-Tier Architecture
