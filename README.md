@@ -188,7 +188,7 @@
 - Building Dotnet From Scratch
 - From Client to endpoint
 - [Minimal API](https://github.com/aabdullahsayed/minimal-api-middleware-demo)
-- Dependency Injection and IoC
+- [Dependency Injection and IoC](./Dependency Injection)
 - ADO.NET 
 - N-Tier Architecture
 - Clean Architecture
