@@ -6,7 +6,7 @@ and make their objects interchangeable.`
 
 <img src="image.svg">
 
-`IPaymentStrategy` is the contract. It defines one method — `Pay(decimal amount)` — that all payment methods must implement. Neither the client nor the context knows (or cares) what happens inside.
+`IPaymentStrategy` is the contract. It defines one method  `Pay(decimal amount)`  that all payment methods must implement. Neither the client nor the context knows (or cares) what happens inside.
 `BkashPayment`, `CardPayment`, and `NagadPayment` are the concrete strategies. Each implements the interface with its own logic.
 
 
