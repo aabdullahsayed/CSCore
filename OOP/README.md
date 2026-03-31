@@ -12,3 +12,24 @@
  
  - **_Collaboration:_** Many friends can build the app together. Everyone works on their own part at the same time, without getting in each other's way.
 
+
+**Class and Object are the core building blocks of Object-Oriented Programming (OOP).**
+
+`Class`
+
+A class is a blueprint or template that defines.
+
+- Properties (variables / attributes)
+- Behaviors (methods / functions)
+
+ **_A class does not occupy memory until an object is created._**
+
+ `Object`
+
+An object is a real instance of a class. 
+It:
+- Occupies memory
+- Has actual values
+- Can call class methods
+
+
