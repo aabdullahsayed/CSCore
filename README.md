@@ -186,7 +186,7 @@
 - [Dotnet Project Structure](./API)
 - [Middleware](./Middleware)
 - Building Dotnet From Scratch
-- Routing[./Routing]
+- [Routing](./Routing)
 - From Client to endpoint
 - [Minimal API](https://github.com/aabdullahsayed/minimal-api-middleware-demo)
 - [Dependency Injection and IoC](./Dependency%20Injection)
