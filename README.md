@@ -194,7 +194,7 @@
 - N-Tier Architecture
 - Clean Architecture
 - Controller `IActionResult`
-- Dependency Injection Life Cycle - Transient, Scoped, Singleton
+- [Dependency Injection Life Cycle - Transient, Scoped, Singleton](./ServiceLifetimes)
 - Http Context
 - Reflection
 - API Controller

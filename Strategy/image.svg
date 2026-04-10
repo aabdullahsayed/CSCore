@@ -1,82 +1,117 @@
-<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif; background-color: #111827;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 550" width="100%" height="100%">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
-    </marker>
-
-    <marker id="hollow-arrow" viewBox="0 0 14 14" refX="14" refY="7" markerWidth="10" markerHeight="10" orient="auto">
-      <path d="M 0 0 L 14 7 L 0 14 Z" fill="#111827" stroke="#94a3b8" stroke-width="2"/>
-    </marker>
-
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.4"/>
+    <filter id="sketchy-shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#a0a0a0" flood-opacity="0.3"/>
     </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
   </defs>
 
-  <text x="500" y="60" text-anchor="middle" font-size="28" font-weight="600" fill="#f8fafc" letter-spacing="1">Strategy Pattern Architecture</text>
-
-  <g transform="translate(50, 130)" filter="url(#shadow)">
-    <rect width="320" height="160" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
-    <path d="M 0 6 a 6 6 0 0 1 6 -6 h 308 a 6 6 0 0 1 6 6 v 34 h -320 z" fill="#2563eb"/>
+  <style>
+    .bg { fill: #fdfdfd; }
+    .text { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Caveat', cursive, sans-serif; fill: #1e1e1e; font-size: 16px; }
+    .title { font-size: 20px; font-weight: bold; }
+    .subtitle { font-size: 16px; font-weight: bold; fill: #ef4444; }
+    .subtitle-good { font-size: 16px; font-weight: bold; fill: #10b981; }
+    .box-bg { fill: #ffffff; stroke: #1e1e1e; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; filter: url(#sketchy-shadow); }
     
-    <text x="160" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff" letter-spacing="0.5">CONTEXT</text>
-    <text x="160" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#f8fafc">PaymentProcess.cs</text>
-    <line x1="20" y1="80" x2="300" y2="80" stroke="#334155" stroke-width="1"/>
+    .code { font-family: monospace; font-size: 15px; fill: #d946ef; }
+    .code-comment { fill: #6b7280; font-style: italic; }
+    .line { stroke: #1e1e1e; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .line-dashed { stroke: #666; stroke-width: 2; stroke-dasharray: 6 6; stroke-linecap: round; marker-end: url(#arrowhead-dashed); }
+    .arrow { fill: none; stroke: #1e1e1e; stroke-width: 2.5; marker-end: url(#arrowhead); }
     
-    <text x="20" y="105" font-size="14" font-family="'Cascadia Code', Consolas, monospace" fill="#cbd5e1">- _strategy: IPaymentStrategy</text>
-    <text x="20" y="130" font-size="14" font-family="'Cascadia Code', Consolas, monospace" fill="#86efac">+ SetStrategy(strategy)</text>
-    <text x="20" y="150" font-size="14" font-family="'Cascadia Code', Consolas, monospace" fill="#86efac">+ ExecutePayment(amount)</text>
-  </g>
+    .box-bad { fill: #fff0f0; }
+    .box-context { fill: #eef2ff; }
+    .box-interface { fill: #fcf6bd; stroke-dasharray: 8 4; }
+    .box-strategy { fill: #f0fdf4; }
+  </style>
 
-  <g transform="translate(630, 130)" filter="url(#shadow)">
-    <rect width="320" height="160" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
-    <path d="M 0 6 a 6 6 0 0 1 6 -6 h 308 a 6 6 0 0 1 6 6 v 34 h -320 z" fill="#7c3aed"/>
+  <rect class="bg" width="100%" height="100%"/>
+
+  <g transform="translate(30, 40) rotate(-1)">
+    <text class="text title" x="10" y="20">The Problem</text>
+    <text class="text subtitle" x="10" y="45">The "If-Else" Monster</text>
     
-    <text x="160" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff" letter-spacing="0.5">«interface» STRATEGY</text>
-    <text x="160" y="75" text-anchor="middle" font-size="18" font-weight="600" fill="#f8fafc">IPaymentStrategy.cs</text>
-    <line x1="20" y1="95" x2="300" y2="95" stroke="#334155" stroke-width="1"/>
+    <rect class="box-bg box-bad" x="10" y="60" width="360" height="360" rx="10"/>
+    <text class="text title" x="30" y="90">Class: Checkout</text>
+    <path class="line" d="M 10 105 L 370 105"/>
     
-    <text x="160" y="130" text-anchor="middle" font-size="15" font-family="'Cascadia Code', Consolas, monospace" fill="#86efac">+ pay(amount: decimal)</text>
+    <text class="code" x="30" y="135">function pay(amount, method) {</text>
+    
+    <text class="code" x="50" y="165">if (method == <tspan fill="#3b82f6">"card"</tspan>) {</text>
+    <text class="code code-comment" x="70" y="185">// 50 lines of Card API logic</text>
+    <text class="code" x="50" y="205">}</text>
+    
+    <text class="code" x="50" y="235">else if (method == <tspan fill="#3b82f6">"paypal"</tspan>) {</text>
+    <text class="code code-comment" x="70" y="255">// 60 lines of PayPal API</text>
+    <text class="code" x="50" y="275">}</text>
+    
+    <text class="code" x="50" y="305">else if (method == <tspan fill="#3b82f6">"crypto"</tspan>) {</text>
+    <text class="code code-comment" x="70" y="325">// ... it never ends ...</text>
+    <text class="code" x="50" y="345">}</text>
+    <text class="code" x="30" y="365">}</text>
+    
+    <text class="text" x="55" y="400" font-weight="bold" fill="#ef4444">Hard to maintain &amp; easy to break!</text>
   </g>
 
-  <path d="M 370 210 L 615 210" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="492" y="195" text-anchor="middle" font-size="14" fill="#cbd5e1" font-weight="500">Uses (Has-A)</text>
-  <text x="492" y="230" text-anchor="middle" font-size="12" fill="#94a3b8" font-style="italic">Delegates execution</text>
+  <path class="line line-dashed" d="M 440 30 L 440 500" stroke="#ccc" marker-end="none"/>
 
-  <g transform="translate(100, 420)" filter="url(#shadow)">
-    <rect width="240" height="120" rx="6" fill="#1e293b" stroke="#e11d48" stroke-width="2"/>
-    <path d="M 0 6 a 6 6 0 0 1 6 -6 h 228 a 6 6 0 0 1 6 6 v 29 h -240 z" fill="#be185d"/>
-    <text x="120" y="23" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">BkashPayment.cs</text>
-    <text x="120" y="70" text-anchor="middle" font-size="14" font-family="'Cascadia Code', Consolas, monospace" fill="#86efac">+ pay(amount)</text>
-    <text x="120" y="95" text-anchor="middle" font-size="13" fill="#94a3b8" font-style="italic">// Bkash API Logic</text>
-  </g>
+  <g transform="translate(480, 40) rotate(0.5)">
+    <text class="text title" x="10" y="20">The Solution</text>
+    <text class="text subtitle-good" x="10" y="45">The Strategy Pattern</text>
+    
+    <rect class="box-bg box-context" x="10" y="60" width="220" height="130" rx="10"/>
+    <text class="text title" x="25" y="90">Class: Checkout</text>
+    <path class="line" d="M 10 105 L 230 105"/>
+    <text class="code code-comment" x="25" y="130">// Holds a strategy</text>
+    <text class="code" x="25" y="150">strategy = <tspan fill="#3b82f6">paymentMethod</tspan></text>
+    <text class="code" x="25" y="175">strategy.pay(amount)</text>
 
-  <g transform="translate(380, 420)" filter="url(#shadow)">
-    <rect width="240" height="120" rx="6" fill="#1e293b" stroke="#0d9488" stroke-width="2"/>
-    <path d="M 0 6 a 6 6 0 0 1 6 -6 h 228 a 6 6 0 0 1 6 6 v 29 h -240 z" fill="#0f766e"/>
-    <text x="120" y="23" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">CardPayment.cs</text>
-    <text x="120" y="70" text-anchor="middle" font-size="14" font-family="'Cascadia Code', Consolas, monospace" fill="#86efac">+ pay(amount)</text>
-    <text x="120" y="95" text-anchor="middle" font-size="13" fill="#94a3b8" font-style="italic">// Credit Card Gateway</text>
-  </g>
+    <path class="arrow" d="M 230 115 L 300 115"/>
+    <text class="text" x="245" y="105" font-size="14">Uses</text>
 
-  <g transform="translate(660, 420)" filter="url(#shadow)">
-    <rect width="240" height="120" rx="6" fill="#1e293b" stroke="#ea580c" stroke-width="2"/>
-    <path d="M 0 6 a 6 6 0 0 1 6 -6 h 228 a 6 6 0 0 1 6 6 v 29 h -240 z" fill="#c2410c"/>
-    <text x="120" y="23" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">NagadPayment.cs</text>
-    <text x="120" y="70" text-anchor="middle" font-size="14" font-family="'Cascadia Code', Consolas, monospace" fill="#86efac">+ pay(amount)</text>
-    <text x="120" y="95" text-anchor="middle" font-size="13" fill="#94a3b8" font-style="italic">// Nagad API Logic</text>
-  </g>
+    <rect class="box-bg box-interface" x="310" y="80" width="180" height="70" rx="8"/>
+    <text class="text" x="345" y="105" font-style="italic">«Interface»</text>
+    <text class="text" x="325" y="125" font-weight="bold">PaymentStrategy</text>
+    <text class="code" x="340" y="145" fill="#666" font-size="14">pay(amount)</text>
 
-  <path d="M 500 420 L 500 360 L 790 360 L 790 304" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#hollow-arrow)"/>
-  <path d="M 220 420 L 220 360 L 790 360" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4"/>
-  <path d="M 780 420 L 780 360" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4"/>
+    <path class="line-dashed" d="M 400 150 L 400 210"/>
+    <path class="line-dashed" d="M 90 210 L 430 210"/>
+    <path class="line-dashed" d="M 90 210 L 90 250"/>
+    <path class="line-dashed" d="M 260 210 L 260 250"/>
+    <path class="line-dashed" d="M 430 210 L 430 250"/>
 
-  <g transform="translate(50, 30)" filter="url(#shadow)">
-    <rect width="220" height="60" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
-    <path d="M 0 6 a 6 6 0 0 1 6 -6 h 208 a 6 6 0 0 1 6 6 v 18 h -220 z" fill="#334155"/>
-    <text x="110" y="17" text-anchor="middle" font-size="12" font-weight="bold" fill="#f8fafc">Program.cs (Client)</text>
-    <text x="110" y="45" text-anchor="middle" font-size="11" fill="#cbd5e1">Injects strategy at runtime</text>
-    <path d="M 110 60 L 110 115" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+    <rect class="box-bg box-strategy" x="10" y="260" width="160" height="80" rx="8"/>
+    <text class="text title" x="20" y="290">CardStrategy</text>
+    <path class="line" d="M 10 305 L 170 305"/>
+    <text class="code" x="35" y="325">pay() { ... }</text>
+
+    <rect class="box-bg box-strategy" x="180" y="260" width="160" height="80" rx="8"/>
+    <text class="text title" x="185" y="290">PayPalStrategy</text>
+    <path class="line" d="M 180 305 L 340 305"/>
+    <text class="code" x="205" y="325">pay() { ... }</text>
+
+    <rect class="box-bg box-strategy" x="350" y="260" width="160" height="80" rx="8"/>
+    <text class="text title" x="355" y="290">CryptoStrategy</text>
+    <path class="line" d="M 350 305 L 510 305"/>
+    <text class="code" x="375" y="325">pay() { ... }</text>
+    
+    <text class="text" x="80" y="390" font-style="italic" fill="#666">
+      "Need to add Apple Pay? Just create a new" 
+    </text>
+    <text class="text" x="80" y="415" font-style="italic" fill="#666">
+      ApplePayStrategy box and plug it in.
+    </text>
+    <text class="text" x="80" y="440" font-style="italic" fill="#666">
+      The main Checkout class never has to change!"
+    </text>
+
   </g>
 
 </svg>
