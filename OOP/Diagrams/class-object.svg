@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 450" width="100%" height="100%">
+  <defs>
+    <filter id="sketchy-shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#a0a0a0" flood-opacity="0.3"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <style>
+    /* Styling to mimic a hand-drawn whiteboard look */
+    .bg { fill: #fdfdfd; }
+    .text { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Caveat', 'Comic Neue', cursive, sans-serif; fill: #1e1e1e; font-size: 16px; }
+    .title { font-size: 22px; font-weight: bold; }
+    .box-bg { fill: #ffffff; stroke: #1e1e1e; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; filter: url(#sketchy-shadow); }
+    .box-class { fill: #eef2ff; }
+    .box-obj1 { fill: #fff0f0; }
+    .box-obj2 { fill: #f0fdf4; }
+    .line { stroke: #1e1e1e; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .dashed { stroke-dasharray: 6 6; }
+    .arrow { fill: none; stroke: #1e1e1e; stroke-width: 2.5; stroke-dasharray: 8 6; marker-end: url(#arrowhead); }
+    .code { font-family: monospace; fill: #d946ef; font-size: 15px; }
+  </style>
+
+  <rect class="bg" width="100%" height="100%"/>
+
+  <g transform="translate(60, 100) rotate(-1)">
+    <rect class="box-bg box-class" width="240" height="240" rx="12"/>
+    <text class="text title" x="20" y="35">Class: Car</text>
+    <path class="line dashed" d="M 15 50 C 100 48, 150 52, 225 50"/>
+    
+    <text class="text" x="20" y="80">Attributes (State):</text>
+    <text class="text code" x="35" y="105">- color</text>
+    <text class="text code" x="35" y="130">- model</text>
+    
+    <path class="line dashed" d="M 15 155 C 100 153, 150 157, 225 155"/>
+    <text class="text" x="20" y="185">Methods (Behavior):</text>
+    <text class="text code" x="35" y="210">- drive()</text>
+    
+    <text class="text" x="40" y="-15" fill="#666">"The Blueprint"</text>
+  </g>
+
+  <path class="arrow" d="M 315 180 Q 400 100 480 110"/>
+  <path class="arrow" d="M 315 250 Q 400 340 480 320"/>
+  
+  <text class="text" x="360" y="130" transform="rotate(-15 360 130)">Instantiation</text>
+  <text class="text" x="360" y="325" transform="rotate(15 360 325)">Instantiation</text>
+
+  <g transform="translate(500, 30) rotate(1.5)">
+    <rect class="box-bg box-obj1" width="260" height="170" rx="12"/>
+    <text class="text title" x="20" y="35">Object 1</text>
+    <text class="text" x="120" y="35" font-size="14">(Instance of Car)</text>
+    <path class="line dashed" d="M 15 50 C 120 52, 180 48, 245 50"/>
+    
+    <text class="text" x="20" y="80">Real Values:</text>
+    <text class="text code" x="35" y="110">color = <tspan fill="#ef4444">"Red"</tspan></text>
+    <text class="text code" x="35" y="140">model = <tspan fill="#ef4444">"Mustang"</tspan></text>
+  </g>
+
+  <g transform="translate(500, 230) rotate(-1)">
+    <rect class="box-bg box-obj2" width="260" height="170" rx="12"/>
+    <text class="text title" x="20" y="35">Object 2</text>
+    <text class="text" x="120" y="35" font-size="14">(Instance of Car)</text>
+    <path class="line dashed" d="M 15 50 C 120 48, 180 52, 245 50"/>
+    
+    <text class="text" x="20" y="80">Real Values:</text>
+    <text class="text code" x="35" y="110">color = <tspan fill="#3b82f6">"Blue"</tspan></text>
+    <text class="text code" x="35" y="140">model = <tspan fill="#3b82f6">"Civic"</tspan></text>
+  </g>
+  
+  <text class="text" x="580" y="435" fill="#666">"The Physical Cars"</text>
+
+</svg>
