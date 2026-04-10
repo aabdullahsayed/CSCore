@@ -35,13 +35,21 @@ It:
 
 ![Class and Object](Diagrams/class-object.svg)
 
-Four Pillars of OOP:
 
-- Encapsulation
-- Inheritance
-- Abstraction
-- Polymorphism
+The 4 Pillars at a Glance
+
+- Encapsulation: Wrapping data (attributes) and methods (behaviors) together in a single box (a class), and hiding the internal state from the outside.
 
 
+- Abstraction: Hiding complex background details and exposing only a simple, easy-to-use interface to the user.
 
 ![Pillars of OOP](Diagrams/pillars.svg)
+
+
+- Inheritance: Creating new child classes that automatically adopt the properties and behaviors of an existing parent class, allowing for code reuse.
+
+
+- Polymorphism: The ability for different objects to respond to the exact same instruction in their own unique way.
+
+
+
