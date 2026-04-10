@@ -35,4 +35,13 @@ It:
 
 ![Class and Object](Diagrams/class-object.svg)
 
+Four Pillars of OOP:
 
+- Encapsulation
+- Inheritance
+- Abstraction
+- Polymorphism
+
+
+
+![Pillars of OOP](Diagrams/pillars.svg)
