@@ -33,6 +33,6 @@ It:
 - Can call class methods
 
 
-![Class and Object](/class-object.svg)
+![Class and Object](Diagrams/class-object.svg)
 
 
