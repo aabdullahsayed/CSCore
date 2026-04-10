@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <filter id="sketchy-shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#a0a0a0" flood-opacity="0.3"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7" fill="none" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <style>
+    .bg { fill: #fdfdfd; }
+    .text { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Caveat', cursive, sans-serif; fill: #1e1e1e; font-size: 16px; }
+    .title { font-size: 20px; font-weight: bold; }
+    .subtitle { font-size: 16px; font-weight: bold; fill: #ef4444; }
+    .subtitle-good { font-size: 16px; font-weight: bold; fill: #10b981; }
+    .box-bg { fill: #ffffff; stroke: #1e1e1e; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; filter: url(#sketchy-shadow); }
+    
+    .line { stroke: #1e1e1e; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .line-thick { stroke: #ef4444; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    .line-dashed { stroke: #666; stroke-width: 2; stroke-dasharray: 6 6; stroke-linecap: round; marker-end: url(#arrowhead-dashed); }
+    .arrow { fill: none; stroke: #1e1e1e; stroke-width: 2.5; marker-end: url(#arrowhead); }
+    
+    .box-bad { fill: #fff0f0; }
+    .box-good { fill: #f0fdf4; }
+    .box-high-level { fill: #eef2ff; }
+    .box-low-level { fill: #f3f4f6; }
+    .box-interface { fill: #fcf6bd; stroke-dasharray: 8 4; }
+  </style>
+
+  <rect class="bg" width="100%" height="100%"/>
+
+  <g transform="translate(40, 40) rotate(-1)">
+    <text class="text title" x="10" y="20">The Problem (Without DIP)</text>
+    <text class="text subtitle" x="10" y="45">Tight Coupling</text>
+    
+    <rect class="box-bg box-high-level" x="80" y="80" width="200" height="80" rx="10"/>
+    <text class="text title" x="95" y="115">Budget Report</text>
+    <text class="text" x="125" y="140" fill="#666" font-size="14">(High-Level)</text>
+
+    <path class="line-thick" d="M 180 160 L 180 260"/>
+    
+    <rect x="160" y="195" width="40" height="25" fill="#f59e0b" stroke="#1e1e1e" stroke-width="2" rx="4"/>
+    <path d="M 170 195 V 185 A 10 10 0 0 1 190 185 V 195" fill="none" stroke="#1e1e1e" stroke-width="3"/>
+
+    <rect class="box-bg box-low-level box-bad" x="80" y="260" width="200" height="80" rx="10"/>
+    <text class="text title" x="95" y="295">MySQL Database</text>
+    <text class="text" x="130" y="320" fill="#ef4444" font-size="14">(Low-Level)</text>
+
+    <text class="text" x="30" y="390" font-weight="bold" fill="#ef4444">❌ Direct, concrete dependency!</text>
+    <text class="text" x="30" y="415" fill="#666">Report is locked to one specific database.</text>
+    <text class="text" x="30" y="440" fill="#666">Changes to DB require changes to Report.</text>
+  </g>
+
+  <path class="line line-dashed" d="M 450 30 L 450 480" stroke="#ccc" marker-end="none"/>
+
+  <g transform="translate(500, 40) rotate(1)">
+    <text class="text title" x="10" y="20">The Solution (With DIP)</text>
+    <text class="text subtitle-good" x="10" y="45">Abstractions &amp; Contracts</text>
+    
+    <rect class="box-bg box-high-level" x="120" y="80" width="200" height="80" rx="10"/>
+    <text class="text title" x="135" y="115">Budget Report</text>
+    <text class="text" x="165" y="140" fill="#666" font-size="14">(High-Level)</text>
+
+    <path class="line" d="M 220 160 L 220 200" marker-end="url(#arrowhead)"/>
+
+    <rect class="box-bg box-interface" x="120" y="200" width="200" height="60" rx="10"/>
+    <text class="text" x="135" y="225" font-style="italic">« Interface / Contract »</text>
+    <text class="text title" x="145" y="245" font-size="16">IDataProvider</text>
+
+    <path class="line-dashed" d="M 90 320 L 160 270"/>
+    <path class="line-dashed" d="M 220 320 L 220 270"/>
+    <path class="line-dashed" d="M 350 320 L 280 270"/>
+
+    <rect class="box-bg box-low-level" x="10" y="330" width="120" height="60" rx="10"/>
+    <text class="text" x="35" y="365" font-weight="bold">MySQL</text>
+
+    <rect class="box-bg box-low-level" x="160" y="330" width="120" height="60" rx="10"/>
+    <text class="text" x="195" y="365" font-weight="bold">Web API</text>
+
+    <rect class="box-bg box-good" x="310" y="330" width="140" height="60" rx="10"/>
+    <text class="text" x="330" y="365" font-weight="bold">Mock Data</text>
+
+    <text class="text" x="50" y="420" font-weight="bold" fill="#10b981">✅ Loose Coupling via Contract!</text>
+    <text class="text" x="50" y="445" fill="#666">The Report only depends on the Interface.</text>
+    <text class="text" x="50" y="470" fill="#666">Implementations can be swapped safely.</text>
+  </g>
+
+</svg>

@@ -3,6 +3,8 @@ High-level classes shouldn’t depend on low-level classes. Both should depend o
 shouldn’t depend on details. Details should depend on
 abstractions.
 
+<img src="dip.svg">
+
 
 Without Dependency Inversion Principle
 ```c#
