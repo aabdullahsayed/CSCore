@@ -14,7 +14,7 @@ and make their objects interchangeable.`
 
 The key benefit is the `Open/Closed Principle` in action: adding a new payment method (say, `SslcommerzPayment`) requires zero changes to `PaymentProcess` or `Program.cs`  you just write a new class that implements the interface.
 
-When Do We Use It?
+### When Do We Use It?
 You use the Strategy Pattern when you have one specific task that can be done in multiple different ways, and you want to be able to switch between those ways on the fly (at runtime).
 
 ### Real-world examples:
