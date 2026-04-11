@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 600" width="100%" height="100%">
+  <defs>
+    <filter id="sketchy-shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#a0a0a0" flood-opacity="0.3"/>
+    </filter>
+    
+    <marker id="arrowhead-fixed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M 0 0 L 10 3.5 L 0 7" fill="#1e1e1e" />
+    </marker>
+  </defs>
+
+  <style>
+    .bg { fill: #fdfdfd; }
+    .text { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Caveat', cursive, sans-serif; fill: #1e1e1e; font-size: 16px; }
+    .title { font-size: 22px; font-weight: bold; }
+    .subtitle { font-size: 16px; font-weight: bold; fill: #ef4444; }
+    .subtitle-good { font-size: 16px; font-weight: bold; fill: #10b981; }
+    .box-bg { fill: #ffffff; stroke: #1e1e1e; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; filter: url(#sketchy-shadow); }
+    .code { font-family: monospace; font-size: 14px; fill: #d946ef; }
+    .code-comment { fill: #6b7280; font-style: italic; }
+    .line { stroke: #1e1e1e; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .line-dashed { stroke: #666; stroke-width: 2; stroke-dasharray: 6 6; stroke-linecap: round; }
+    .arrow { fill: none; stroke: #1e1e1e; stroke-width: 2.5; marker-end: url(#arrowhead-fixed); }
+    .box-bad { fill: #fff0f0; }
+    .box-client { fill: #eef2ff; }
+    .box-factory { fill: #fef08a; }
+    .box-object { fill: #f3f4f6; }
+    .box-interface { fill: #fcf6bd; stroke-dasharray: 8 4; }
+  </style>
+
+  <rect class="bg" width="100%" height="100%"/>
+
+  <g transform="translate(30, 40) rotate(-1)">
+    <text class="text title" x="10" y="20">The Problem: Direct Coupling</text>
+    <rect class="box-bg box-client box-bad" x="20" y="60" width="340" height="200" rx="10"/>
+    <text class="text title" x="35" y="90">Main App Logic (Client)</text>
+    <path class="line" d="M 20 105 L 360 105"/>
+    <text class="code" x="35" y="135">if (type == "road") {</text>
+    <text class="code" x="55" y="160" fill="#ef4444">return new Truck();</text>
+    <text class="code" x="35" y="185">} else if (type == "sea") {</text>
+    <text class="code" x="55" y="210" fill="#ef4444">return new Ship();</text>
+    <text class="code" x="35" y="235">}</text>
+
+    <path class="arrow" d="M 100 260 L 70 340"/>
+    <path class="arrow" d="M 280 260 L 310 340"/>
+
+    <rect class="box-bg box-object" x="10" y="350" width="120" height="60" rx="8"/>
+    <text class="text" x="35" y="385" font-weight="bold">Truck</text>
+    <rect class="box-bg box-object" x="250" y="350" width="120" height="60" rx="8"/>
+    <text class="text" x="285" y="385" font-weight="bold">Ship</text>
+
+    <text class="text subtitle" x="20" y="450">❌ Violates Open/Closed Principle</text>
+    <text class="text" x="20" y="475" fill="#666">Adding types requires modifying this class.</text>
+  </g>
+
+  <path class="line-dashed" d="M 430 30 L 430 550" stroke="#ccc"/>
+
+  <g transform="translate(470, 40) rotate(1)">
+    <text class="text title" x="10" y="20">The Solution: Factory Design</text>
+    
+    <rect class="box-bg box-client" x="10" y="60" width="230" height="120" rx="10"/>
+    <text class="text title" x="25" y="90">Main App Logic</text>
+    <text class="code" x="25" y="145">transport = factory.create("sea")</text>
+
+    <path class="arrow" d="M 240 120 L 290 120"/>
+
+    <rect class="box-bg box-factory" x="300" y="60" width="210" height="140" rx="10"/>
+    <text class="text title" x="315" y="90">Factory</text>
+    <path class="line" d="M 300 105 L 510 105"/>
+    <text class="code" x="310" y="130">if (type == "road")</text>
+    <text class="code" x="310" y="155" fill="#10b981">return new Truck();</text>
+
+    <text class="text" x="525" y="100" font-weight="bold" fill="#10b981">Isolated Creation</text>
+    <text class="text" x="525" y="125" fill="#666">The 'new' keyword is hidden</text>
+    <text class="text" x="525" y="145" fill="#666">inside the Factory only.</text>
+
+    <path class="arrow" d="M 405 200 L 405 250"/>
+
+    <rect class="box-bg box-interface" x="305" y="260" width="200" height="60" rx="30"/>
+    <text class="text title" x="335" y="295" font-size="18">ITransport</text>
+
+    <path class="line-dashed" d="M 405 320 L 405 370"/>
+    <path class="line-dashed" d="M 405 345 L 200 345 L 200 370"/>
+    <path class="line-dashed" d="M 405 345 L 560 345 L 560 370"/>
+
+    <rect class="box-bg box-object" x="140" y="380" width="110" height="50" rx="5"/>
+    <text class="text" x="170" y="410">Truck</text>
+    
+    <rect class="box-bg box-object" x="350" y="380" width="110" height="50" rx="5"/>
+    <text class="text" x="380" y="410">Plane</text>
+
+    <rect class="box-bg box-object" x="510" y="380" width="110" height="50" rx="5"/>
+    <text class="text" x="540" y="410">Ship</text>
+
+    <text class="text subtitle-good" x="20" y="480">✅ Loose Coupling</text>
+    <text class="text" x="20" y="505" fill="#666">The Client app is unaware of concrete classes.</text>
+    <text class="text" x="20" y="530" fill="#666">Adding a 'Plane' doesn't break the main app!</text>
+  </g>
+</svg>
