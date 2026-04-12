@@ -190,15 +190,18 @@
 - From Client to endpoint
 - [Minimal API](https://github.com/aabdullahsayed/minimal-api-middleware-demo)
 - [Dependency Injection and IoC](./Dependency%20Injection)
-- ADO.NET 
-- N-Tier Architecture
-- Clean Architecture
+- ADO.NET
 - Controller `IActionResult`
 - [Dependency Injection Life Cycle - Transient, Scoped, Singleton](./ServiceLifetimes)
 - Http Context
 - Reflection
 - API Controller
 
+
+## System architecture
+
+- [N-Tier Architecture](./NTierArchiteture)
+- [Clean Architecture](./CleanArchitechture)
 
 
 
