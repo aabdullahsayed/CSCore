@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', cursive; fill: #2d3436; }
+      .ring-text { font-size: 24px; font-weight: bold; }
+      .desc { font-size: 16px; }
+    </style>
+    <marker id="arrow-in" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d63031" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#fdf6e3" rx="15" />
+  <text x="350" y="50" font-size="28px" font-weight="bold" text-anchor="middle">Clean Architecture (The Onion)</text>
+
+  <circle cx="350" cy="380" r="280" fill="#74b9ff" stroke="#2d3436" stroke-width="2" />
+  <text x="350" y="140" class="ring-text" text-anchor="middle">Infrastructure / Presentation</text>
+  <text x="350" y="165" class="desc" text-anchor="middle">(Controllers, SQL Server, Entity Framework, UI)</text>
+
+  <circle cx="350" cy="380" r="190" fill="#55efc4" stroke="#2d3436" stroke-width="2" />
+  <text x="350" y="240" class="ring-text" text-anchor="middle">Application (Use Cases)</text>
+  <text x="350" y="265" class="desc" text-anchor="middle">(Services, DTOs, Repository Interfaces)</text>
+
+  <circle cx="350" cy="380" r="100" fill="#ffeaa7" stroke="#2d3436" stroke-width="2" />
+  <text x="350" y="370" class="ring-text" text-anchor="middle">Domain Core</text>
+  <text x="350" y="395" class="desc" text-anchor="middle">(Entities, Enums,</text>
+  <text x="350" y="415" class="desc" text-anchor="middle">Pure Logic)</text>
+
+  <path d="M 170 200 L 250 280" fill="none" stroke="#d63031" stroke-width="4" marker-end="url(#arrow-in)" />
+  <text x="170" y="250" font-size="18" fill="#d63031" font-weight="bold" transform="rotate(45 170 250)">Depends On</text>
+  
+  <path d="M 580 380 L 470 380" fill="none" stroke="#d63031" stroke-width="4" marker-end="url(#arrow-in)" />
+  <text x="500" y="370" font-size="18" fill="#d63031" font-weight="bold">Depends On</text>
+
+  <path d="M 230 520 L 280 470" fill="none" stroke="#d63031" stroke-width="4" marker-end="url(#arrow-in)" />
+  
+  <rect x="230" y="550" width="240" height="80" fill="#fff" stroke="#2d3436" stroke-width="2" rx="8" transform="rotate(-2 350 590)" />
+  <text x="350" y="580" font-weight="bold" text-anchor="middle" font-size="18px">The Core knows NOTHING</text>
+  <text x="350" y="605" text-anchor="middle" font-size="18px">about the outer rings.</text>
+</svg>
