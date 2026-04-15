@@ -1,55 +1,66 @@
 # Why OOP?
 
- - **_Modularity & Organization:_** Keep code neat in small, tidy parts. It's like having different boxes for toys, clothes, and books. It makes things easier to find!
+- **_Modularity & Organization:_** Keep code neat in small, tidy parts. It's like having different boxes for toys, clothes, and books. It makes things easier to find!
 
 - **_Reusability:_** Use good parts of your code again in new places. It's like using the same recipe to bake multiple cakes. Saves you lots of time!
 
--  **_Maintainability:_** Fixing problems is easy. If something goes wrong, you only have to fix that one part, and everything else will keep working fine.
+- **_Maintainability:_** Fixing problems is easy. If something goes wrong, you only have to fix that one part, and everything else will keep working fine.
 
- - **_Scalability:_** Make your app grow bigger and bigger. Think of adding more floors to a tall building as you need more space.
+- **_Scalability:_** Make your app grow bigger and bigger. Think of adding more floors to a tall building as you need more space.
 
- - **_Security & Encapsulation:_** Keep important information safe. It's like having strong locks and keys, so only the right people can see secret things.
- 
- - **_Collaboration:_** Many friends can build the app together. Everyone works on their own part at the same time, without getting in each other's way.
+- **_Security & Encapsulation:_** Keep important information safe. It's like having strong locks and keys, so only the right people can see secret things.
 
+- **_Collaboration:_** Many friends can build the app together. Everyone works on their own part at the same time, without getting in each other's way.
 
-**Class and Object are the core building blocks of Object-Oriented Programming (OOP).**
+---
 
-`Class`
+# Class and Object are the Core Building Blocks of Object-Oriented Programming (OOP)
 
-A class is a blueprint or template that defines.
+## `Class`
+
+A class is a blueprint or template that defines:
 
 - Properties (variables / attributes)
 - Behaviors (methods / functions)
 
- **_A class does not occupy memory until an object is created._**
+**_A class does not occupy memory until an object is created._**
 
- `Object`
+## `Object`
 
-An object is a real instance of a class. 
-It:
+An object is a real instance of a class. It:
+
 - Occupies memory
 - Has actual values
 - Can call class methods
 
-
 ![Class and Object](Diagrams/class-object.svg)
 
+---
 
-The 4 Pillars at a Glance
-
-- Encapsulation: Wrapping data (attributes) and methods (behaviors) together in a single box (a class), and hiding the internal state from the outside.
-
-
-- Abstraction: Hiding complex background details and exposing only a simple, easy-to-use interface to the user.
+# The 4 Pillars at a Glance
 
 ![Pillars of OOP](Diagrams/pillars.svg)
 
+## Encapsulation
 
-- Inheritance: Creating new child classes that automatically adopt the properties and behaviors of an existing parent class, allowing for code reuse.
+Wrapping data (attributes) and methods (behaviors) together in a single box (a class), and hiding the internal state from the outside.
+![Encapsulation](Diagrams/Encapsulation.svg)
+
+## Abstraction
+
+Hiding complex background details and exposing only a simple, easy-to-use interface to the user.
 
 
-- Polymorphism: The ability for different objects to respond to the exact same instruction in their own unique way.
+## Inheritance
+
+Creating new child classes that automatically adopt the properties and behaviors of an existing parent class, allowing for code reuse.
+![inheritance](Diagrams/inheritance.svg)
 
 
+## Polymorphism
 
+The ability for different objects to respond to the exact same instruction in their own unique way.
+
+## Access Modifier
+
+![Access Modifier](Diagrams/access.svg)

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Comic+Neue:wght@400;700&amp;display=swap');
+      
+      .box-text { 
+        font-family: 'Comic Neue', 'Comic Sans MS', cursive; 
+        font-size: 20px;
+        fill: #334155;
+      }
+      .label-text {
+        font-family: 'Comic Neue', 'Comic Sans MS', cursive; 
+        font-size: 24px;
+        font-weight: 700;
+        fill: #0f172a;
+      }
+      
+      /* Colors matching the reference */
+      .bg-yellow { fill: #fef08a; stroke: #cbd5e1; stroke-width: 2; }
+      .bg-green { fill: #bbf7d0; stroke: #cbd5e1; stroke-width: 2; }
+      .bg-blue { fill: #bfdbfe; stroke: #cbd5e1; stroke-width: 2; }
+      
+      /* Hand-drawn offset shadows for vibe */
+      .shadow { fill: none; stroke: #e2e8f0; stroke-width: 3; stroke-linecap: round; }
+    </style>
+
+    <marker id="sketch-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#fdfdfd" />
+
+  <g transform="translate(100, 50)">
+    <rect x="54" y="54" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="50" width="120" height="50" rx="6" class="bg-yellow" />
+    <text x="110" y="82" text-anchor="middle" class="box-text">Class A</text>
+
+    <rect x="54" y="174" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="170" width="120" height="50" rx="6" class="bg-green" />
+    <text x="110" y="202" text-anchor="middle" class="box-text">Class B</text>
+
+    <path d="M 110 165 C 108 140, 112 120, 110 105" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+
+    <text x="110" y="270" text-anchor="middle" class="label-text">Single Inheritance</text>
+  </g>
+
+  <g transform="translate(450, 50)">
+    <rect x="254" y="54" width="120" height="50" rx="6" class="shadow" />
+    <rect x="250" y="50" width="120" height="50" rx="6" class="bg-yellow" />
+    <text x="310" y="82" text-anchor="middle" class="box-text">Class A</text>
+
+    <rect x="54" y="174" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="170" width="120" height="50" rx="6" class="bg-green" />
+    <text x="110" y="202" text-anchor="middle" class="box-text">Class B</text>
+
+    <rect x="254" y="174" width="120" height="50" rx="6" class="shadow" />
+    <rect x="250" y="170" width="120" height="50" rx="6" class="bg-green" />
+    <text x="310" y="202" text-anchor="middle" class="box-text">Class C</text>
+
+    <rect x="454" y="174" width="120" height="50" rx="6" class="shadow" />
+    <rect x="450" y="170" width="120" height="50" rx="6" class="bg-green" />
+    <text x="510" y="202" text-anchor="middle" class="box-text">Class D</text>
+
+    <path d="M 140 165 C 190 140, 240 120, 290 105" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+    <path d="M 310 165 C 308 140, 312 120, 310 105" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+    <path d="M 480 165 C 430 140, 380 120, 330 105" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+
+    <text x="310" y="270" text-anchor="middle" class="label-text">Hierarchical Inheritance</text>
+  </g>
+
+  <g transform="translate(100, 420)">
+    <rect x="54" y="34" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="30" width="120" height="50" rx="6" class="bg-yellow" />
+    <text x="110" y="62" text-anchor="middle" class="box-text">Class A</text>
+
+    <rect x="54" y="144" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="140" width="120" height="50" rx="6" class="bg-green" />
+    <text x="110" y="172" text-anchor="middle" class="box-text">Class B</text>
+
+    <rect x="54" y="254" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="250" width="120" height="50" rx="6" class="bg-blue" />
+    <text x="110" y="282" text-anchor="middle" class="box-text">Class C</text>
+
+    <path d="M 110 135 C 108 115, 112 100, 110 85" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+    <path d="M 110 245 C 112 225, 108 210, 110 195" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+
+    <text x="110" y="340" text-anchor="middle" class="label-text">Multilevel Inheritance</text>
+  </g>
+
+  <g transform="translate(350, 450)">
+    <rect x="54" y="34" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="30" width="120" height="50" rx="6" class="bg-yellow" />
+    <text x="110" y="62" text-anchor="middle" class="box-text">Class A</text>
+
+    <rect x="254" y="34" width="120" height="50" rx="6" class="shadow" />
+    <rect x="250" y="30" width="120" height="50" rx="6" class="bg-yellow" />
+    <text x="310" y="62" text-anchor="middle" class="box-text">Class B</text>
+
+    <rect x="154" y="154" width="120" height="50" rx="6" class="shadow" />
+    <rect x="150" y="150" width="120" height="50" rx="6" class="bg-green" />
+    <text x="210" y="182" text-anchor="middle" class="box-text">Class C</text>
+
+    <path d="M 170 145 C 150 120, 130 100, 115 85" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+    <path d="M 250 145 C 270 120, 290 100, 305 85" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+
+    <text x="210" y="250" text-anchor="middle" class="label-text">Multiple Inheritance</text>
+  </g>
+
+  <g transform="translate(800, 400)">
+    <rect x="154" y="34" width="120" height="50" rx="6" class="shadow" />
+    <rect x="150" y="30" width="120" height="50" rx="6" class="bg-yellow" />
+    <text x="210" y="62" text-anchor="middle" class="box-text">Class A</text>
+
+    <rect x="54" y="134" width="120" height="50" rx="6" class="shadow" />
+    <rect x="50" y="130" width="120" height="50" rx="6" class="bg-green" />
+    <text x="110" y="162" text-anchor="middle" class="box-text">Class B</text>
+
+    <rect x="254" y="134" width="120" height="50" rx="6" class="shadow" />
+    <rect x="250" y="130" width="120" height="50" rx="6" class="bg-green" />
+    <text x="310" y="162" text-anchor="middle" class="box-text">Class C</text>
+
+    <rect x="154" y="234" width="120" height="50" rx="6" class="shadow" />
+    <rect x="150" y="230" width="120" height="50" rx="6" class="bg-blue" />
+    <text x="210" y="262" text-anchor="middle" class="box-text">Class D</text>
+
+    <path d="M 120 125 C 145 105, 170 90, 190 85" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+    <path d="M 300 125 C 275 105, 250 90, 230 85" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+    
+    <path d="M 190 225 C 170 205, 145 190, 120 185" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+    <path d="M 230 225 C 250 205, 275 190, 300 185" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#sketch-arrow)" />
+
+    <text x="210" y="330" text-anchor="middle" class="label-text">Hybrid Inheritance</text>
+  </g>
+
+</svg>
