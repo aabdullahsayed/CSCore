@@ -61,6 +61,8 @@ Creating new child classes that automatically adopt the properties and behaviors
 
 The ability for different objects to respond to the exact same instruction in their own unique way.
 
+![Polymorphism](Diagrams/poly.svg)
+
 ## Access Modifier
 
 ![Access Modifier](Diagrams/access.svg)

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Comic+Neue:wght@400;700&amp;display=swap');
+      
+      .sketch-title { font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-size: 28px; font-weight: 700; fill: #0f172a; }
+      .sketch-heading { font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-size: 22px; font-weight: 700; fill: #1e293b; }
+      .sketch-text { font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-size: 18px; fill: #334155; }
+      .sketch-code { font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-size: 18px; font-weight: 700; fill: #1d4ed8; }
+      
+      /* Vibrant Excalidraw Colors */
+      .bg-purple-badge { fill: #6741d9; stroke: #1e1e1e; stroke-width: 3; stroke-linecap: round; }
+      .bg-yellow { fill: #fef08a; stroke: #cbd5e1; stroke-width: 3; }
+      .bg-green { fill: #bbf7d0; stroke: #cbd5e1; stroke-width: 3; }
+      .bg-blue { fill: #bfdbfe; stroke: #cbd5e1; stroke-width: 3; }
+      .bg-pink { fill: #fbcfe8; stroke: #cbd5e1; stroke-width: 3; }
+      .bg-gray { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 3; }
+      
+      .shadow { fill: none; stroke: #e2e8f0; stroke-width: 4; stroke-linecap: round; }
+      .line { fill: none; stroke: #475569; stroke-width: 3; stroke-linecap: round; }
+      .dashed-box { fill: #f8fafc; stroke: #64748b; stroke-width: 2.5; stroke-dasharray: 8, 8; }
+    </style>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#fdfdfd" />
+
+  <rect x="454" y="34" width="290" height="60" rx="12" fill="none" stroke="#e9ecef" stroke-width="4" transform="rotate(-1, 600, 60)" />
+  <rect x="450" y="30" width="290" height="60" rx="12" class="bg-purple-badge" transform="rotate(-1, 600, 60)" />
+  <text x="600" y="70" text-anchor="middle" font-size="32" fill="#ffffff" class="sketch-title" transform="rotate(-1, 600, 60)">POLYMORPHISM</text>
+  
+  <text x="600" y="130" text-anchor="middle" class="sketch-heading">The ability of an object to take on multiple forms and behaviors.</text>
+
+  <path d="M 600 160 C 595 300, 605 500, 600 700" fill="none" stroke="#cbd5e1" stroke-width="4" stroke-dasharray="10, 10" stroke-linecap="round" />
+
+  <text x="300" y="190" text-anchor="middle" class="sketch-title">1. Method Overloading</text>
+  <text x="300" y="220" text-anchor="middle" class="sketch-text">(Compile-Time)</text>
+  <text x="300" y="250" text-anchor="middle" class="sketch-text" fill="#64748b">Same method name, different parameters.</text>
+
+  <rect x="34" y="324" width="90" height="40" rx="6" class="shadow" />
+  <rect x="30" y="320" width="90" height="40" rx="6" class="bg-gray" />
+  <text x="75" y="346" text-anchor="middle" class="sketch-text">String</text>
+
+  <rect x="34" y="404" width="90" height="40" rx="6" class="shadow" />
+  <rect x="30" y="400" width="90" height="40" rx="6" class="bg-gray" />
+  <text x="75" y="426" text-anchor="middle" class="sketch-text">Integer</text>
+
+  <rect x="34" y="484" width="90" height="40" rx="6" class="shadow" />
+  <rect x="30" y="480" width="90" height="40" rx="6" class="bg-gray" />
+  <text x="75" y="506" text-anchor="middle" class="sketch-text">Double</text>
+
+  <rect x="174" y="314" width="110" height="220" rx="10" class="shadow" />
+  <rect x="170" y="310" width="110" height="220" rx="10" class="bg-yellow" />
+  <text x="225" y="415" text-anchor="middle" class="sketch-heading">Printer</text>
+  <text x="225" y="440" text-anchor="middle" class="sketch-heading">Class</text>
+  <path d="M 200 370 L 250 370 L 250 390 L 200 390 Z" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <path d="M 210 350 L 240 350 L 240 370 L 210 370 Z" fill="none" stroke="#1e293b" stroke-width="2"/>
+
+  <path d="M 120 340 L 160 340" class="line" marker-end="url(#arrow)" />
+  <path d="M 120 420 L 160 420" class="line" marker-end="url(#arrow)" />
+  <path d="M 120 500 L 160 500" class="line" marker-end="url(#arrow)" />
+
+  <rect x="334" y="304" width="240" height="60" rx="8" class="shadow" />
+  <rect x="330" y="300" width="240" height="60" rx="8" class="bg-blue" />
+  <text x="345" y="325" class="sketch-code">void Print(string text)</text>
+  <text x="345" y="348" class="sketch-text" font-size="14">➔ Prints text...</text>
+
+  <rect x="334" y="394" width="240" height="60" rx="8" class="shadow" />
+  <rect x="330" y="390" width="240" height="60" rx="8" class="bg-blue" />
+  <text x="345" y="415" class="sketch-code">void Print(int num)</text>
+  <text x="345" y="438" class="sketch-text" font-size="14">➔ Prints integer...</text>
+
+  <rect x="334" y="484" width="240" height="60" rx="8" class="shadow" />
+  <rect x="330" y="480" width="240" height="60" rx="8" class="bg-blue" />
+  <text x="345" y="505" class="sketch-code">void Print(double val)</text>
+  <text x="345" y="528" class="sketch-text" font-size="14">➔ Prints decimal...</text>
+
+  <path d="M 280 340 C 300 340, 310 330, 320 330" class="line" marker-end="url(#arrow)" />
+  <path d="M 280 420 C 300 420, 310 420, 320 420" class="line" marker-end="url(#arrow)" />
+  <path d="M 280 500 C 300 500, 310 510, 320 510" class="line" marker-end="url(#arrow)" />
+
+
+  <text x="900" y="190" text-anchor="middle" class="sketch-title">2. Method Overriding</text>
+  <text x="900" y="220" text-anchor="middle" class="sketch-text">(Runtime)</text>
+  <text x="900" y="250" text-anchor="middle" class="sketch-text" fill="#64748b">Derived class redefines base class's method.</text>
+
+  <rect x="794" y="294" width="220" height="70" rx="8" class="shadow" />
+  <rect x="790" y="290" width="220" height="70" rx="8" class="bg-yellow" />
+  <text x="900" y="320" text-anchor="middle" class="sketch-heading">Class Animal (Base)</text>
+  <text x="900" y="345" text-anchor="middle" class="sketch-code">void MakeSound()</text>
+
+  <rect x="654" y="424" width="220" height="80" rx="8" class="shadow" />
+  <rect x="650" y="420" width="220" height="80" rx="8" class="bg-green" />
+  <text x="760" y="450" text-anchor="middle" class="sketch-heading">Class Dog</text>
+  <text x="760" y="480" text-anchor="middle" class="sketch-code">MakeSound() ➔ "Bark!"</text>
+
+  <rect x="934" y="424" width="220" height="80" rx="8" class="shadow" />
+  <rect x="930" y="420" width="220" height="80" rx="8" class="bg-pink" />
+  <text x="1040" y="450" text-anchor="middle" class="sketch-heading">Class Cat</text>
+  <text x="1040" y="480" text-anchor="middle" class="sketch-code">MakeSound() ➔ "Meow!"</text>
+
+  <path d="M 760 410 C 760 380, 850 390, 880 370" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6,6" marker-end="url(#arrow)" />
+  <path d="M 1040 410 C 1040 380, 950 390, 920 370" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6,6" marker-end="url(#arrow)" />
+  <text x="900" y="380" text-anchor="middle" class="sketch-text" font-size="14" fill="#94a3b8">Inherits</text>
+
+  <rect x="700" y="560" width="400" height="110" rx="12" class="dashed-box" />
+  
+  <text x="720" y="595" class="sketch-code" fill="#0f172a">Animal myPet = new <tspan fill="#d946ef">Cat()</tspan>;</text>
+  <text x="720" y="635" class="sketch-code" fill="#0f172a">myPet.<tspan fill="#2563eb">MakeSound()</tspan>;</text>
+
+  <path d="M 880 630 C 950 630, 980 580, 1020 515" fill="none" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow-blue)" stroke-linecap="round" />
+  
+  <rect x="980" y="580" width="130" height="40" rx="20" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2" />
+  <text x="1045" y="605" text-anchor="middle" class="sketch-text" font-size="16" fill="#0284c7">Runs Cat's version!</text>
+
+</svg>
