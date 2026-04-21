@@ -131,9 +131,9 @@
 - API Controller
 
 ## ORM
-- DbContext
+- [DbContext](./DbContext)
 - Migration
-- Entity Framework Core
+- [Entity Framework Core](./EntityFramwork)
 
 
 ## System architecture
