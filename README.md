@@ -133,6 +133,7 @@
 ## ORM
 - DbContext
 - Migration
+- Entity Framework Core
 
 
 ## System architecture
