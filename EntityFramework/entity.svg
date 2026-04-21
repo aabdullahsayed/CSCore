@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%" style="background-color: #fdfdfd; font-family: 'Comic Sans MS', 'Segoe Print', 'Chalkboard SE', 'Bradley Hand', cursive, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#059669" />
+    </marker>
+  </defs>
+
+  <text x="600" y="60" font-size="34" font-weight="bold" fill="#1e1e1e" text-anchor="middle">Entity Framework Core: The O/RM Bridge</text>
+  <path d="M 350 75 Q 600 85 850 75" fill="none" stroke="#1e1e1e" stroke-width="3" stroke-linecap="round" />
+
+  <rect x="55" y="155" width="300" height="300" rx="12" fill="#d1d5db" />
+  <rect x="50" y="150" width="300" height="300" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="3" />
+  <text x="200" y="190" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle">C# Application</text>
+  <text x="200" y="215" font-size="16" fill="#555" text-anchor="middle">(The Object-Oriented World)</text>
+  <line x1="50" y1="230" x2="350" y2="230" stroke="#2563eb" stroke-width="2" />
+  
+  <text x="70" y="280" font-size="16" fill="#1e1e1e">You write C# LINQ:</text>
+  <rect x="70" y="295" width="260" height="60" rx="5" fill="#fff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="80" y="320" font-size="14" font-family="monospace" fill="#1e1e1e">var activeUsers = context.Users</text>
+  <text x="80" y="340" font-size="14" font-family="monospace" fill="#1e1e1e">  .Where(u =&gt; u.IsActive).ToList();</text>
+  
+  <text x="70" y="390" font-size="16" fill="#1e1e1e">You get back:</text>
+  <text x="70" y="420" font-size="16" font-weight="bold" fill="#2563eb">List&lt;User&gt; Objects</text>
+
+
+  <rect x="455" y="155" width="290" height="300" rx="12" fill="#d1d5db" />
+  <rect x="450" y="150" width="290" height="300" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="3" stroke-dasharray="8 4" />
+  <text x="595" y="190" font-size="22" font-weight="bold" fill="#d97706" text-anchor="middle">EF Core Engine</text>
+  <text x="595" y="215" font-size="16" fill="#555" text-anchor="middle">(The Translator)</text>
+  <line x1="450" y1="230" x2="740" y2="230" stroke="#d97706" stroke-width="2" stroke-dasharray="8 4" />
+
+  <rect x="470" y="260" width="250" height="50" rx="8" fill="#fff" stroke="#1e1e1e" stroke-width="1.5" />
+  <text x="595" y="290" font-size="16" font-weight="bold" fill="#1e1e1e" text-anchor="middle">1. LINQ Provider</text>
+  <text x="595" y="325" font-size="12" fill="#555" text-anchor="middle">(Translates C# to SQL string)</text>
+
+  <rect x="470" y="360" width="250" height="50" rx="8" fill="#fff" stroke="#1e1e1e" stroke-width="1.5" />
+  <text x="595" y="390" font-size="16" font-weight="bold" fill="#1e1e1e" text-anchor="middle">2. Materializer (O/RM)</text>
+  <text x="595" y="425" font-size="12" fill="#555" text-anchor="middle">(Maps tabular rows to C# Objects)</text>
+
+
+  <path d="M 855 155 Q 1000 155 1145 155 L 1145 425 Q 1000 465 855 425 Z" fill="#d1d5db" />
+  <path d="M 850 150 Q 995 120 1140 150 L 1140 420 Q 995 460 850 420 Z" fill="#ecfdf5" stroke="#059669" stroke-width="3" />
+  <path d="M 850 150 Q 995 180 1140 150" fill="none" stroke="#059669" stroke-width="3" />
+  
+  <text x="995" y="220" font-size="22" font-weight="bold" fill="#059669" text-anchor="middle">Database</text>
+  <text x="995" y="245" font-size="16" fill="#555" text-anchor="middle">(The Relational World)</text>
+  
+  <text x="880" y="300" font-size="16" fill="#1e1e1e">Executes Raw SQL:</text>
+  <rect x="880" y="315" width="240" height="40" rx="5" fill="#fff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="890" y="340" font-size="14" font-family="monospace" fill="#be185d">SELECT * FROM Users</text>
+  <text x="890" y="360" font-size="14" font-family="monospace" fill="#be185d">WHERE IsActive = 1;</text>
+
+
+  <path d="M 360 270 Q 405 250 440 270" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <path d="M 750 270 Q 800 250 840 270" fill="none" stroke="#d97706" stroke-width="3" marker-end="url(#arrow)" />
+  
+  <path d="M 840 380 Q 800 400 750 380" fill="none" stroke="#059669" stroke-width="3" marker-end="url(#arrow-green)" />
+  <path d="M 440 380 Q 405 400 360 380" fill="none" stroke="#d97706" stroke-width="3" marker-end="url(#arrow)" />
+
+
+  <text x="600" y="550" font-size="28" font-weight="bold" fill="#1e1e1e" text-anchor="middle">Why do we use it? (The Sticky Notes)</text>
+  <line x1="450" y1="565" x2="750" y2="565" stroke="#1e1e1e" stroke-width="2" stroke-dasharray="4 4" />
+
+  <rect x="100" y="600" width="220" height="180" fill="#fef08a" stroke="#ca8a04" stroke-width="1" filter="drop-shadow(3px 5px 4px rgba(0,0,0,0.2))" transform="rotate(-2 210 690)"/>
+  <rect x="100" y="600" width="220" height="30" fill="#fde047" /> <text x="210" y="660" font-size="20" font-weight="bold" fill="#1e1e1e" text-anchor="middle">1. Productivity</text>
+  <text x="210" y="695" font-size="14" fill="#1e1e1e" text-anchor="middle">No writing tedious,</text>
+  <text x="210" y="715" font-size="14" fill="#1e1e1e" text-anchor="middle">repetitive ADO.NET</text>
+  <text x="210" y="735" font-size="14" fill="#1e1e1e" text-anchor="middle">plumbing code.</text>
+
+  <rect x="360" y="620" width="220" height="180" fill="#bae6fd" stroke="#0284c7" stroke-width="1" filter="drop-shadow(3px 5px 4px rgba(0,0,0,0.2))" transform="rotate(3 470 710)"/>
+  <rect x="360" y="620" width="220" height="30" fill="#7dd3fc" />
+  <text x="470" y="680" font-size="20" font-weight="bold" fill="#1e1e1e" text-anchor="middle">2. Type Safety</text>
+  <text x="470" y="715" font-size="14" fill="#1e1e1e" text-anchor="middle">Raw SQL is just a string.</text>
+  <text x="470" y="735" font-size="14" fill="#1e1e1e" text-anchor="middle">LINQ uses real classes.</text>
+  <text x="470" y="755" font-size="14" fill="#1e1e1e" text-anchor="middle">If a table changes, the</text>
+  <text x="470" y="775" font-size="14" fill="#be185d" font-weight="bold" text-anchor="middle">compiler warns you!</text>
+
+  <rect x="620" y="590" width="220" height="180" fill="#bbf7d0" stroke="#16a34a" stroke-width="1" filter="drop-shadow(3px 5px 4px rgba(0,0,0,0.2))" transform="rotate(-1 730 680)"/>
+  <rect x="620" y="590" width="220" height="30" fill="#86efac" />
+  <text x="730" y="650" font-size="20" font-weight="bold" fill="#1e1e1e" text-anchor="middle">3. Change Tracking</text>
+  <text x="730" y="685" font-size="14" fill="#1e1e1e" text-anchor="middle">Modify a C# object in</text>
+  <text x="730" y="705" font-size="14" fill="#1e1e1e" text-anchor="middle">memory, call SaveChanges,</text>
+  <text x="730" y="725" font-size="14" fill="#1e1e1e" text-anchor="middle">and EF figures out the</text>
+  <text x="730" y="745" font-size="14" font-weight="bold" fill="#1e1e1e" text-anchor="middle">exact UPDATE SQL to write.</text>
+
+  <rect x="880" y="630" width="220" height="180" fill="#fbcfe8" stroke="#db2777" stroke-width="1" filter="drop-shadow(3px 5px 4px rgba(0,0,0,0.2))" transform="rotate(4 990 720)"/>
+  <rect x="880" y="630" width="220" height="30" fill="#f9a8d4" />
+  <text x="990" y="690" font-size="20" font-weight="bold" fill="#1e1e1e" text-anchor="middle">4. Migrations</text>
+  <text x="990" y="725" font-size="14" fill="#1e1e1e" text-anchor="middle">Write your C# classes</text>
+  <text x="990" y="745" font-size="14" fill="#1e1e1e" text-anchor="middle">first, and EF Core will</text>
+  <text x="990" y="765" font-size="14" fill="#1e1e1e" text-anchor="middle">generate the database</text>
+  <text x="990" y="785" font-size="14" font-weight="bold" fill="#1e1e1e" text-anchor="middle">schema for you.</text>
+
+</svg>

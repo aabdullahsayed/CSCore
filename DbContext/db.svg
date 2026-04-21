@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 800" width="100%" height="100%" style="background-color: #fdfdfd; font-family: 'Comic Sans MS', 'Segoe Print', 'Chalkboard SE', 'Bradley Hand', cursive, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e" />
+    </marker>
+  </defs>
+
+  <text x="650" y="60" font-size="34" font-weight="bold" fill="#1e1e1e" text-anchor="middle">The DbContext</text>
+  <path d="M 400 75 Q 650 85 900 75" fill="none" stroke="#1e1e1e" stroke-width="3" stroke-linecap="round" />
+
+  <rect x="85" y="205" width="280" height="400" rx="12" fill="#d1d5db" />
+  <rect x="80" y="200" width="280" height="400" rx="12" fill="#e0f7fa" stroke="#1e1e1e" stroke-width="2.5" />
+  
+  <text x="220" y="245" font-size="24" font-weight="bold" fill="#1e1e1e" text-anchor="middle">ASP.NET App</text>
+  <line x1="80" y1="270" x2="360" y2="270" stroke="#1e1e1e" stroke-width="2.5" />
+  
+  <text x="110" y="330" font-size="20" fill="#1e1e1e">• Controllers / APIs</text>
+  <text x="110" y="390" font-size="20" fill="#1e1e1e">• Domain Entities</text>
+  <text x="130" y="420" font-size="16" fill="#555">  (User, Product, Order)</text>
+  <text x="110" y="480" font-size="20" fill="#1e1e1e">• LINQ Queries</text>
+  <text x="110" y="540" font-size="20" fill="#1e1e1e">• Business Logic</text>
+
+  <rect x="485" y="125" width="360" height="600" rx="12" fill="#d1d5db" />
+  <rect x="480" y="120" width="360" height="600" rx="12" fill="#fff9c4" stroke="#1e1e1e" stroke-width="3" stroke-dasharray="6 4" />
+  
+  <text x="660" y="170" font-size="28" font-weight="bold" fill="#1e1e1e" text-anchor="middle">DbContext</text>
+  <text x="660" y="200" font-size="16" fill="#555" text-anchor="middle">(The Bridge &amp; Unit of Work)</text>
+  <line x1="480" y1="220" x2="840" y2="220" stroke="#1e1e1e" stroke-width="2" stroke-dasharray="6 4" />
+
+  <rect x="520" y="260" width="280" height="80" rx="8" fill="#fef3c7" stroke="#1e1e1e" stroke-width="2" />
+  <text x="660" y="295" font-size="20" font-weight="bold" fill="#1e1e1e" text-anchor="middle">DbSet&lt;TEntity&gt;</text>
+  <text x="660" y="325" font-size="16" fill="#555" text-anchor="middle">In-Memory Repositories</text>
+
+  <rect x="520" y="370" width="280" height="80" rx="8" fill="#fef3c7" stroke="#1e1e1e" stroke-width="2" />
+  <text x="660" y="405" font-size="20" font-weight="bold" fill="#1e1e1e" text-anchor="middle">Change Tracker</text>
+  <text x="660" y="435" font-size="16" fill="#555" text-anchor="middle">Watches Entity States</text>
+
+  <rect x="520" y="480" width="280" height="80" rx="8" fill="#fef3c7" stroke="#1e1e1e" stroke-width="2" />
+  <text x="660" y="515" font-size="20" font-weight="bold" fill="#1e1e1e" text-anchor="middle">LINQ Provider</text>
+  <text x="660" y="545" font-size="16" fill="#555" text-anchor="middle">Translates C# to SQL</text>
+
+  <rect x="520" y="590" width="280" height="90" rx="8" fill="#ffcc80" stroke="#1e1e1e" stroke-width="3" />
+  <text x="660" y="630" font-size="24" font-weight="bold" fill="#1e1e1e" text-anchor="middle">SaveChanges()</text>
+  <text x="660" y="660" font-size="16" fill="#1e1e1e" text-anchor="middle">Commits DB Transaction</text>
+
+  <path d="M 985 285 Q 1060 285 1135 285 L 1135 525 Q 1060 565 985 525 Z" fill="#d1d5db" />
+  <path d="M 980 280 Q 1055 250 1130 280 L 1130 520 Q 1055 560 980 520 Z" fill="#e8f5e9" stroke="#1e1e1e" stroke-width="2.5" />
+  <path d="M 980 280 Q 1055 310 1130 280" fill="none" stroke="#1e1e1e" stroke-width="2.5" />
+  
+  <text x="1055" y="380" font-size="24" font-weight="bold" fill="#1e1e1e" text-anchor="middle">Relational DB</text>
+  <line x1="1000" y1="400" x2="1110" y2="400" stroke="#1e1e1e" stroke-width="2" />
+  <text x="1055" y="435" font-size="18" fill="#1e1e1e" text-anchor="middle">SQL Server</text>
+  <text x="1055" y="465" font-size="18" fill="#1e1e1e" text-anchor="middle">PostgreSQL, etc.</text>
+
+
+  <path d="M 360 300 Q 420 280 475 300" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="420" y="275" font-size="16" font-weight="bold" fill="#2563eb" text-anchor="middle">Dependency</text>
+  <text x="420" y="295" font-size="16" font-weight="bold" fill="#2563eb" text-anchor="middle">Injection</text>
+
+  <path d="M 360 520 Q 420 540 475 520" fill="none" stroke="#1e1e1e" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="420" y="500" font-size="16" font-weight="bold" fill="#1e1e1e" text-anchor="middle">Add / Update</text>
+  <text x="420" y="560" font-size="14" fill="#555" text-anchor="middle">(Modifies State)</text>
+
+  <path d="M 840 300 Q 910 280 975 300" fill="none" stroke="#1e1e1e" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="910" y="280" font-size="18" font-weight="bold" fill="#1e1e1e" text-anchor="middle">Executes SQL</text>
+  <text x="910" y="325" font-size="14" fill="#555" text-anchor="middle">(SELECT ...)</text>
+
+  <path d="M 840 635 Q 910 655 975 500" fill="none" stroke="#d97706" stroke-width="4" marker-end="url(#arrow)" />
+  <text x="940" y="600" font-size="18" font-weight="bold" fill="#d97706" text-anchor="middle">DbTransaction</text>
+  <text x="940" y="625" font-size="14" fill="#555" text-anchor="middle">(INSERT, UPDATE)</text>
+
+</svg>
