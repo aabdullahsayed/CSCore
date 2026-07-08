@@ -143,3 +143,30 @@
 
 
 
+## Topics
+
+1. Validation
+   - Data Annotation Validation
+   - Manual Validation
+   - FluentValidation
+
+2. MediatR
+   - MediatR
+   - MediatR Pipeline Behaviors
+   - Validation Behavior
+
+3. Redis
+
+4. Docker
+
+5. Testing
+
+6. Background Processing
+   - BackgroundService
+   - Scheduled Jobs
+   - Hangfire
+   - Cron Expressions
+
+7. Socket Programming
+
+8. Kafka
